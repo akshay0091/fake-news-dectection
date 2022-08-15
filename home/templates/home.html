@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/css/home.css' %}" />
+
+{% endblock title %}
+{% block content %}
+
+
+
+<div class="content bg-dark">
+    <div class="bg container-fluid  mb-5 ">
+        <div class="main">
+            <div class="text">
+                <p class="qoute text-light align-middle text-xl-center">“If you don't read the newspaper, you're
+                    uninformed. If you read the newspaper, you're mis-informed.”
+
+                    ― Mark Twain</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row bg-dark container-fluid">
+        <div class="col-sm  bg-dark" id="section1">
+            <div class="bg-dark">
+                <div class="about_head bg-dark">
+                    <h1 class="head1">About us</h3>
+                </div>
+                <div class="about_para bg-dark">
+                    <p class="paragraph">
+                        Lots of things you read online especially in your
+                        social media feeds may appear to be true, often is not.
+                        In this modern era the integrity of news can't trust
+                        .This project aim to find the integrity of news using
+                        machine learing technology
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm bg-dark" id="section2">
+            <div class="about_head">
+                <h1 class="head1">Contact us</h3>
+            </div>
+            <div class="about_para">
+                <p class="paragraph">
+                    <a href="https://www.linkedin.com/in/akshay-r-kylm-015317161/">
+                        <img id="li" src="{% static '/image/linkedin.png' %}" alt="" sizes="" srcset="">
+                    </a>
+                    <a href="https://github.com/akshay0091?tab=repositories">
+                        <img id="gi" src="{% static '/image/github.png' %}" alt="" sizes="" srcset="">
+                    </a>
+                    
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

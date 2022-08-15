@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/css/check.css' %}" />
+
+{% endblock title %}
+{% block content %}
+
+
+
+<div class=" bg-image p-5 text-center  mb-5 w-100  text-white" style="background-image: url('/static/image/dark.jpg');
+width: 100%;
+height: 100ch;
+background-size: cover;
+background-repeat: no-repeat;
+
+">
+  <h1 class="mb-5 p-lg-5 h2">Cheak news</h1>
+  <div>
+    <form action="" method="post">
+      {% csrf_token %}
+
+      <div class="input-group h-100" style="height: 20ch;">
+        <span class="input-group-text">Add news here</span>
+        <textarea class="form-control" aria-label="With textarea" name="getrow"></textarea>
+      </div>
+      <div class="p-lg-5 m-5">
+        <button type="submit" class="btn btn-primary">Check now</button>
+      </div>
+    </form>
+    <div class="border-dark">
+      <h1 class="border-success">{{ form }}</h1>
+    </div>
+   
+  </div>
+
+
+</div>
+
+{% endblock content %}

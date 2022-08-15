@@ -1,0 +1,49 @@
+.bg {
+	background: url('/static/image/paper.jpg');
+    height: 700px;
+    
+    background-repeat: no-repeat;
+background-size: cover;
+    
+}
+.qoute{
+    position: absolute;
+    font-size: 8ch;
+    padding-right: 50px;
+}
+
+.main{
+    padding: 100px;
+    font-size: 1vw;
+}
+.body{
+    margin: 0%;
+    padding: 0%;
+    }
+.main{
+    padding-right: 30px;
+}
+.about_head{
+    padding-top: 20px;
+    padding-left: 35%;
+}
+.head1{
+    color: rgb(244, 19, 19);
+    font-weight: 700;
+
+}
+.about_para{
+    padding-left: 5ch;
+    padding-right: 5ch;
+    padding-top: 2ch;
+    padding-bottom: 5ch;
+
+}
+.paragraph{
+    font-size: 20px;
+    color: rgb(241, 241, 241);
+
+}
+#li{
+    padding-left: 40%;
+}
